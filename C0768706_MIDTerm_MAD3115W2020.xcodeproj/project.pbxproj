@@ -19,6 +19,7 @@
 		BD338DFD2411E85D002D26E2 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD338DFC2411E85D002D26E2 /* Mobile.swift */; };
 		BD338DFF2411E894002D26E2 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD338DFE2411E894002D26E2 /* IDisplay.swift */; };
 		BD338E012411E8AB002D26E2 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD338E002411E8AB002D26E2 /* Bill.swift */; };
+		BD338E032411EA0A002D26E2 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD338E022411EA0A002D26E2 /* Int+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		BD338DFC2411E85D002D26E2 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		BD338DFE2411E894002D26E2 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 		BD338E002411E8AB002D26E2 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		BD338E022411EA0A002D26E2 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				BD338DFC2411E85D002D26E2 /* Mobile.swift */,
 				BD338DFE2411E894002D26E2 /* IDisplay.swift */,
 				BD338E002411E8AB002D26E2 /* Bill.swift */,
+				BD338E022411EA0A002D26E2 /* Int+Extension.swift */,
 			);
 			path = C0768706_MIDTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				BD338DE32411E7CE002D26E2 /* AppDelegate.swift in Sources */,
 				BD338DE52411E7CE002D26E2 /* SceneDelegate.swift in Sources */,
 				BD338DFD2411E85D002D26E2 /* Mobile.swift in Sources */,
+				BD338E032411EA0A002D26E2 /* Int+Extension.swift in Sources */,
 				BD338DF72411E7E9002D26E2 /* Customer.swift in Sources */,
 				BD338DFB2411E84B002D26E2 /* Hydro.swift in Sources */,
 				BD338E012411E8AB002D26E2 /* Bill.swift in Sources */,
