@@ -13,6 +13,12 @@
 		BD338DEA2411E7CE002D26E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD338DE82411E7CE002D26E2 /* Main.storyboard */; };
 		BD338DEC2411E7D0002D26E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD338DEB2411E7D0002D26E2 /* Assets.xcassets */; };
 		BD338DEF2411E7D0002D26E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD338DED2411E7D0002D26E2 /* LaunchScreen.storyboard */; };
+		BD338DF72411E7E9002D26E2 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD338DF62411E7E9002D26E2 /* Customer.swift */; };
+		BD338DF92411E83A002D26E2 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD338DF82411E83A002D26E2 /* Internet.swift */; };
+		BD338DFB2411E84B002D26E2 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD338DFA2411E84B002D26E2 /* Hydro.swift */; };
+		BD338DFD2411E85D002D26E2 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD338DFC2411E85D002D26E2 /* Mobile.swift */; };
+		BD338DFF2411E894002D26E2 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD338DFE2411E894002D26E2 /* IDisplay.swift */; };
+		BD338E012411E8AB002D26E2 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD338E002411E8AB002D26E2 /* Bill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		BD338DEB2411E7D0002D26E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD338DEE2411E7D0002D26E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD338DF02411E7D0002D26E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD338DF62411E7E9002D26E2 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		BD338DF82411E83A002D26E2 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
+		BD338DFA2411E84B002D26E2 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
+		BD338DFC2411E85D002D26E2 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
+		BD338DFE2411E894002D26E2 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
+		BD338E002411E8AB002D26E2 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,12 @@
 				BD338DEB2411E7D0002D26E2 /* Assets.xcassets */,
 				BD338DED2411E7D0002D26E2 /* LaunchScreen.storyboard */,
 				BD338DF02411E7D0002D26E2 /* Info.plist */,
+				BD338DF62411E7E9002D26E2 /* Customer.swift */,
+				BD338DF82411E83A002D26E2 /* Internet.swift */,
+				BD338DFA2411E84B002D26E2 /* Hydro.swift */,
+				BD338DFC2411E85D002D26E2 /* Mobile.swift */,
+				BD338DFE2411E894002D26E2 /* IDisplay.swift */,
+				BD338E002411E8AB002D26E2 /* Bill.swift */,
 			);
 			path = C0768706_MIDTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -138,9 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD338DFF2411E894002D26E2 /* IDisplay.swift in Sources */,
 				BD338DE72411E7CE002D26E2 /* ViewController.swift in Sources */,
 				BD338DE32411E7CE002D26E2 /* AppDelegate.swift in Sources */,
 				BD338DE52411E7CE002D26E2 /* SceneDelegate.swift in Sources */,
+				BD338DFD2411E85D002D26E2 /* Mobile.swift in Sources */,
+				BD338DF72411E7E9002D26E2 /* Customer.swift in Sources */,
+				BD338DFB2411E84B002D26E2 /* Hydro.swift in Sources */,
+				BD338E012411E8AB002D26E2 /* Bill.swift in Sources */,
+				BD338DF92411E83A002D26E2 /* Internet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
