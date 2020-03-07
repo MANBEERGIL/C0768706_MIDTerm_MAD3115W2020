@@ -57,7 +57,7 @@ func numberOfSections(in tableView: UITableView) -> Int{
 }
 
 func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
+    return customers.count
 }
 
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
