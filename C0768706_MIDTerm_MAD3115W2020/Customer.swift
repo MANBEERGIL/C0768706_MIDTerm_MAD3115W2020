@@ -18,7 +18,8 @@ class Customer
     }
     var emailId:String?
     var totalBillToPay:Double = 0.0
-    lazy var bills = [String:Bill](); init(customerId:String,firstName:String,lastName:String,emailId:String) {
+    lazy var bills = [String:Bill]()
+    init(customerId:String,firstName:String,lastName:String,emailId:String) {
         self.customerId = customerId
         self.firstName = firstName
         self.lastName = lastName

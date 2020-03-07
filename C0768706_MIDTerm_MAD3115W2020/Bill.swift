@@ -7,6 +7,33 @@
 //
 
 import Foundation
-Class Bill{
+enum Bills
+{
+ case HYDRO,INTERNET,MOBILE
+}
+import Foundation
+class Bill:IDisplay{
+    var billId:String
+    var billDate:Date
+    var billType:Bills
+    var totalBill:Double = 0.0
+
+init(billId:String,billDate:Date,billType:Bills)
+    {
+        self.billId = billId
+        self.billDate = billDate
+        self.billType = billType
+        
+    }
+    
+    func display(){
+        print("Bill ID : \(billId)")
+        print("Bill Date : \(billDate)")
+        print("Bill Type : \(billType)")
+        print("Total Bill:\(totalBill.billInTotal())")
+
+        
+    }
+    
     
 }
