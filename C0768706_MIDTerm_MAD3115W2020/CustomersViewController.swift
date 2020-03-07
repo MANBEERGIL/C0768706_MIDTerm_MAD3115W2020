@@ -51,7 +51,7 @@ class CustomersViewController: UIViewController {
     }
     }
 
-extension CustomersViewController : UITableViewDataSource, UITableViewDelegate{
+ UITableViewDelegate{
 func numberOfSections(in tableView: UITableView) -> Int{
     return 1
 }
