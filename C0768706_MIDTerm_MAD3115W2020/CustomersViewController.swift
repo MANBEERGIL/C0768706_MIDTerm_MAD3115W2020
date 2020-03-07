@@ -20,7 +20,7 @@ class CustomersViewController: UIViewController {
         
         
         if let navigationBar = self.navigationController?.navigationBar {
-            let firstFrame = CGRect(x: 105, y: 0, width: navigationBar.frame.width/2, height: navigationBar.frame.height)
+            let firstFrame = CGRect(x: 95, y: 0, width: navigationBar.frame.width/2, height: navigationBar.frame.height)
             
             if let username = userDefault.string(forKey: "username"){
             let firstLabel = UILabel(frame: firstFrame)
@@ -66,12 +66,17 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
     let customer = customers[indexPath.row]
 
     cell?.textLabel?.text = customer.fullName
-
+    cell?.detailTextLabel?.text = "Age: \(String(describing: customer.age))"
     return cell!
 }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 90.5
     }
+    //func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    //{
+     //   self.performSegue(withIdentifier: "SegueBillDetails", sender: self)
+        
+    //}
 
 
 }

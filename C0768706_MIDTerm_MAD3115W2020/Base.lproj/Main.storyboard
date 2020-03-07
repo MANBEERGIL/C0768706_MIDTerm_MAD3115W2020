@@ -68,12 +68,28 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="customerCell" id="8Jd-mH-3qP">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="customerCell" textLabel="2sh-tb-Etk" detailTextLabel="2ii-bp-TvL" style="IBUITableViewCellStyleSubtitle" id="8Jd-mH-3qP">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Jd-mH-3qP" id="dwl-IX-0Ma">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2sh-tb-Etk">
+                                                    <rect key="frame" x="20" y="10" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2ii-bp-TvL">
+                                                    <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -97,6 +113,7 @@
                         <barButtonItem key="rightBarButtonItem" title="+New Customer" id="Gf7-HD-AqV">
                             <connections>
                                 <action selector="btnNewCustomer:" destination="ZG5-kK-Oii" id="MvM-ts-xW0"/>
+                                <segue destination="R16-4M-Idg" kind="show" id="Hn1-4G-tNk"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -108,20 +125,85 @@
             </objects>
             <point key="canvasLocation" x="2100" y="-5"/>
         </scene>
-        <!--Show Bill Details View Controller-->
+        <!--Add New Customer View Controller-->
         <scene sceneID="JcS-zu-Mat">
             <objects>
-                <viewController id="R16-4M-Idg" customClass="ShowBillDetailsViewController" customModule="C0768706_MIDTerm_MAD3115W2020" sceneMemberID="viewController">
+                <viewController id="R16-4M-Idg" customClass="AddNewCustomerViewController" customModule="C0768706_MIDTerm_MAD3115W2020" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lXY-QJ-x60">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER FIRSTNAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sy7-jD-g5Z">
+                                <rect key="frame" x="53" y="135" width="300" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER LASTNAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cd6-PG-qhR">
+                                <rect key="frame" x="53" y="202" width="300" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER EMAILID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3dt-AY-IZE">
+                                <rect key="frame" x="53" y="277" width="300" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SELECT YOUR BIRTHDATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGG-CR-ISR">
+                                <rect key="frame" x="90" y="362" width="263" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEE-5L-vvk">
+                                <rect key="frame" x="168" y="706" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SAVE"/>
+                                <connections>
+                                    <action selector="btnSave:" destination="R16-4M-Idg" eventType="touchUpInside" id="pJq-9d-e3z"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="Unm-bB-lrM">
+                                <rect key="frame" x="0.0" y="425" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="pickerChanged:" destination="R16-4M-Idg" eventType="valueChanged" id="Q1S-Fo-kAU"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="RM4-R5-iBR"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Cbm-dJ-6oZ"/>
+                    <connections>
+                        <outlet property="datePicker" destination="Unm-bB-lrM" id="6dI-o3-u0S"/>
+                        <outlet property="lblBithdate" destination="xGG-CR-ISR" id="muy-8d-xyv"/>
+                        <outlet property="txtEmailId" destination="3dt-AY-IZE" id="BFu-oM-kiQ"/>
+                        <outlet property="txtFirstName" destination="Sy7-jD-g5Z" id="UWC-bn-9lz"/>
+                        <outlet property="txtLastName" destination="Cd6-PG-qhR" id="C6h-vy-qKW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CD1-qF-CfR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2828" y="-5"/>
+            <point key="canvasLocation" x="2826.0869565217395" y="-5.3571428571428568"/>
+        </scene>
+        <!--Show Bill Details View Controller-->
+        <scene sceneID="dde-eZ-tM1">
+            <objects>
+                <viewController storyboardIdentifier="SegueBillDetails" id="F6o-TT-Stb" customClass="ShowBillDetailsViewController" customModule="C0768706_MIDTerm_MAD3115W2020" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bzg-Zh-q45">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="2jg-GK-wg1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wcZ-7f-oPw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3538" y="-5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="buM-ev-gnv">

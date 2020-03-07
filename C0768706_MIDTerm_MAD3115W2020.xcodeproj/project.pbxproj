@@ -19,6 +19,8 @@
 		BDE4DE902413D59000FA4134 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4DE8F2413D59000FA4134 /* Singleton.swift */; };
 		BDE4DE922413D70B00FA4134 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4DE912413D70B00FA4134 /* Extension+String.swift */; };
 		BDE4DE942413E12F00FA4134 /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4DE932413E12F00FA4134 /* ShowBillDetailsViewController.swift */; };
+		BDE4DE962413F43100FA4134 /* AddNewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4DE952413F43100FA4134 /* AddNewCustomerViewController.swift */; };
+		BDE4DE982413F73D00FA4134 /* AgeCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4DE972413F73D00FA4134 /* AgeCalculation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		BDE4DE8F2413D59000FA4134 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		BDE4DE912413D70B00FA4134 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		BDE4DE932413E12F00FA4134 /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
+		BDE4DE952413F43100FA4134 /* AddNewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCustomerViewController.swift; sourceTree = "<group>"; };
+		BDE4DE972413F73D00FA4134 /* AgeCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeCalculation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 				BDE4DE8F2413D59000FA4134 /* Singleton.swift */,
 				BDE4DE912413D70B00FA4134 /* Extension+String.swift */,
 				BDE4DE932413E12F00FA4134 /* ShowBillDetailsViewController.swift */,
+				BDE4DE952413F43100FA4134 /* AddNewCustomerViewController.swift */,
+				BDE4DE972413F73D00FA4134 /* AgeCalculation.swift */,
 			);
 			path = C0768706_MIDTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -163,8 +169,10 @@
 				BDE4DE8E2413D4D600FA4134 /* Customer.swift in Sources */,
 				BD338DE72411E7CE002D26E2 /* ViewController.swift in Sources */,
 				BD338DE32411E7CE002D26E2 /* AppDelegate.swift in Sources */,
+				BDE4DE962413F43100FA4134 /* AddNewCustomerViewController.swift in Sources */,
 				BD338DE52411E7CE002D26E2 /* SceneDelegate.swift in Sources */,
 				BDE4DE942413E12F00FA4134 /* ShowBillDetailsViewController.swift in Sources */,
+				BDE4DE982413F73D00FA4134 /* AgeCalculation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
