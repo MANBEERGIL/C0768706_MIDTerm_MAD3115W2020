@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="C0768706_MIDTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="C0778925_MIDTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +38,7 @@
                                 <state key="normal" title="LOGIN"/>
                                 <connections>
                                     <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yIl-sg-fcX"/>
-                                    <segue destination="ZG5-kK-Oii" kind="show" id="yMf-IK-7Ju"/>
+                                    <segue destination="ZG5-kK-Oii" kind="show" id="ZPy-j1-QIc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -59,24 +59,69 @@
         <!--Customers View Controller-->
         <scene sceneID="JXa-y8-N3l">
             <objects>
-                <viewController storyboardIdentifier="customersVC" id="ZG5-kK-Oii" customClass="CustomersViewController" customModule="C0768706_MIDTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="customersVC" id="ZG5-kK-Oii" customClass="CustomersViewController" customModule="C0778925_MIDTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="flq-cw-MC2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Khb-IF-C79">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="customerCell" id="8Jd-mH-3qP">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Jd-mH-3qP" id="dwl-IX-0Ma">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Khb-IF-C79" firstAttribute="leading" secondItem="fyL-06-D7C" secondAttribute="leading" id="Jr3-cr-Onm"/>
+                            <constraint firstItem="Khb-IF-C79" firstAttribute="top" secondItem="fyL-06-D7C" secondAttribute="top" id="Jul-7S-LKp"/>
+                            <constraint firstItem="fyL-06-D7C" firstAttribute="bottom" secondItem="Khb-IF-C79" secondAttribute="bottom" id="Nt0-Oh-0W2"/>
+                            <constraint firstItem="fyL-06-D7C" firstAttribute="trailing" secondItem="Khb-IF-C79" secondAttribute="trailing" id="Phf-7O-Sa0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fyL-06-D7C"/>
                     </view>
                     <navigationItem key="navigationItem" id="cPI-o8-Nij">
-                        <barButtonItem key="rightBarButtonItem" title="logout" id="KlG-Uz-o4r">
+                        <barButtonItem key="leftBarButtonItem" title="logout" id="KlG-Uz-o4r">
                             <connections>
                                 <action selector="btnLogout:" destination="ZG5-kK-Oii" id="Jhq-p7-1zv"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="+New Customer" id="Gf7-HD-AqV">
+                            <connections>
+                                <action selector="btnNewCustomer:" destination="ZG5-kK-Oii" id="MvM-ts-xW0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tblView" destination="Khb-IF-C79" id="5dy-j3-fXR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2r-km-cDL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1678" y="84"/>
+            <point key="canvasLocation" x="2100" y="-5"/>
+        </scene>
+        <!--Show Bill Details View Controller-->
+        <scene sceneID="JcS-zu-Mat">
+            <objects>
+                <viewController id="R16-4M-Idg" customClass="ShowBillDetailsViewController" customModule="C0768706_MIDTerm_MAD3115W2020" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lXY-QJ-x60">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="RM4-R5-iBR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CD1-qF-CfR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2828" y="-5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="buM-ev-gnv">

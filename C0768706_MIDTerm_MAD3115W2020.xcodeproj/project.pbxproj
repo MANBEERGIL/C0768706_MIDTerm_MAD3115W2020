@@ -15,10 +15,14 @@
 		BD338DEF2411E7D0002D26E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD338DED2411E7D0002D26E2 /* LaunchScreen.storyboard */; };
 		BD3A6C5F2412B7460034153B /* CustomersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3A6C5E2412B7460034153B /* CustomersViewController.swift */; };
 		BD3A6CA5241318C70034153B /* CustomerPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD3A6CA4241318C70034153B /* CustomerPlist.plist */; };
+		BDE4DE8E2413D4D600FA4134 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4DE8D2413D4D600FA4134 /* Customer.swift */; };
+		BDE4DE902413D59000FA4134 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4DE8F2413D59000FA4134 /* Singleton.swift */; };
+		BDE4DE922413D70B00FA4134 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4DE912413D70B00FA4134 /* Extension+String.swift */; };
+		BDE4DE942413E12F00FA4134 /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4DE932413E12F00FA4134 /* ShowBillDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BD338DDF2411E7CE002D26E2 /* C0778925_MIDTerm_MAD3115W2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0778925_MIDTerm_MAD3115W2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD338DDF2411E7CE002D26E2 /* C0768706_MIDTerm_MAD3115W2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0768706_MIDTerm_MAD3115W2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD338DE22411E7CE002D26E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD338DE42411E7CE002D26E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BD338DE62411E7CE002D26E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +32,10 @@
 		BD338DF02411E7D0002D26E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD3A6C5E2412B7460034153B /* CustomersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomersViewController.swift; sourceTree = "<group>"; };
 		BD3A6CA4241318C70034153B /* CustomerPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CustomerPlist.plist; sourceTree = "<group>"; };
+		BDE4DE8D2413D4D600FA4134 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		BDE4DE8F2413D59000FA4134 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		BDE4DE912413D70B00FA4134 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		BDE4DE932413E12F00FA4134 /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +52,7 @@
 		BD338DD62411E7CE002D26E2 = {
 			isa = PBXGroup;
 			children = (
-				BD338DE12411E7CE002D26E2 /* C0778925_MIDTerm_MAD3115W2020 */,
+				BD338DE12411E7CE002D26E2 /* C0768706_MIDTerm_MAD3115W2020 */,
 				BD338DE02411E7CE002D26E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +60,12 @@
 		BD338DE02411E7CE002D26E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BD338DDF2411E7CE002D26E2 /* C0778925_MIDTerm_MAD3115W2020.app */,
+				BD338DDF2411E7CE002D26E2 /* C0768706_MIDTerm_MAD3115W2020.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BD338DE12411E7CE002D26E2 /* C0778925_MIDTerm_MAD3115W2020 */ = {
+		BD338DE12411E7CE002D26E2 /* C0768706_MIDTerm_MAD3115W2020 */ = {
 			isa = PBXGroup;
 			children = (
 				BD338DE22411E7CE002D26E2 /* AppDelegate.swift */,
@@ -69,8 +77,12 @@
 				BD338DF02411E7D0002D26E2 /* Info.plist */,
 				BD3A6C5E2412B7460034153B /* CustomersViewController.swift */,
 				BD3A6CA4241318C70034153B /* CustomerPlist.plist */,
+				BDE4DE8D2413D4D600FA4134 /* Customer.swift */,
+				BDE4DE8F2413D59000FA4134 /* Singleton.swift */,
+				BDE4DE912413D70B00FA4134 /* Extension+String.swift */,
+				BDE4DE932413E12F00FA4134 /* ShowBillDetailsViewController.swift */,
 			);
-			path = C0778925_MIDTerm_MAD3115W2020;
+			path = C0768706_MIDTerm_MAD3115W2020;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,7 +102,7 @@
 			);
 			name = C0768706_MIDTerm_MAD3115W2020;
 			productName = C0768706_MIDTerm_MAD3115W2020;
-			productReference = BD338DDF2411E7CE002D26E2 /* C0778925_MIDTerm_MAD3115W2020.app */;
+			productReference = BD338DDF2411E7CE002D26E2 /* C0768706_MIDTerm_MAD3115W2020.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -146,9 +158,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD3A6C5F2412B7460034153B /* CustomersViewController.swift in Sources */,
+				BDE4DE922413D70B00FA4134 /* Extension+String.swift in Sources */,
+				BDE4DE902413D59000FA4134 /* Singleton.swift in Sources */,
+				BDE4DE8E2413D4D600FA4134 /* Customer.swift in Sources */,
 				BD338DE72411E7CE002D26E2 /* ViewController.swift in Sources */,
 				BD338DE32411E7CE002D26E2 /* AppDelegate.swift in Sources */,
 				BD338DE52411E7CE002D26E2 /* SceneDelegate.swift in Sources */,
+				BDE4DE942413E12F00FA4134 /* ShowBillDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +316,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.manbeer.C0768706-MIDTerm-MAD3115W2020";
-				PRODUCT_NAME = C0778925_MIDTerm_MAD3115W2020;
+				PRODUCT_NAME = C0768706_MIDTerm_MAD3115W2020;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -318,7 +334,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.manbeer.C0768706-MIDTerm-MAD3115W2020";
-				PRODUCT_NAME = C0778925_MIDTerm_MAD3115W2020;
+				PRODUCT_NAME = C0768706_MIDTerm_MAD3115W2020;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

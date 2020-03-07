@@ -23,7 +23,13 @@ class ViewController: UIViewController {
         setRememberMe()
        
         super.viewDidLoad()
+        //viewWillAppear(true)
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+     super.viewWillAppear(animated)
+        userDefault.set("", forKey: "username")
+        userDefault.set("", forKey: "password")
     }
 
     
@@ -50,10 +56,10 @@ class ViewController: UIViewController {
           if flag==true
           {
             setRememberMe()
-         //  let storyboard = UIStoryboard(name: "Main", bundle: nil)
-         //   let vc = storyboard.instantiateViewController(withIdentifier: "customersVC") as! CustomersViewController
+           //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //let vc = storyboard.instantiateViewController(withIdentifier: "customersVC") as! CustomersViewController
                                                
-          //  self.navigationController?.pushViewController(vc, animated: true)
+           // self.navigationController?.pushViewController(vc, animated: true)
             
         }
           else{
@@ -118,5 +124,6 @@ class ViewController: UIViewController {
             }
         }
     }
+    
     
 }
