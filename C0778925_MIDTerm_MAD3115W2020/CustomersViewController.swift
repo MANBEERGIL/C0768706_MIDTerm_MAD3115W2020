@@ -9,7 +9,7 @@
 import UIKit
 
 class CustomersViewController: UIViewController {
-
+ let userDefault = UserDefaults.standard
     override func viewDidLoad() {
          self.navigationItem.hidesBackButton = true
         super.viewDidLoad()
@@ -18,10 +18,14 @@ class CustomersViewController: UIViewController {
     }
     
     @IBAction func btnLogout(_ sender: UIBarButtonItem) {
-        //self.navigationController!.popToRootViewController(animated: true)
+        self.navigationController!.popToRootViewController(animated: true)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        userDefault.set("", forKey: "username")
+        userDefault.set("", forKey: "password")
     }
     
-    
+
     /*
     // MARK: - Navigation
 

@@ -50,10 +50,10 @@ class ViewController: UIViewController {
           if flag==true
           {
             setRememberMe()
-           // let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            //let vc = storyboard.instantiateViewController(withIdentifier: "customersVC") as! CustomersViewController
+         //  let storyboard = UIStoryboard(name: "Main", bundle: nil)
+         //   let vc = storyboard.instantiateViewController(withIdentifier: "customersVC") as! CustomersViewController
                                                
-            //self.navigationController?.pushViewController(vc, animated: true)
+          //  self.navigationController?.pushViewController(vc, animated: true)
             
         }
           else{
@@ -118,4 +118,5 @@ class ViewController: UIViewController {
             }
         }
     }
+    
 }
