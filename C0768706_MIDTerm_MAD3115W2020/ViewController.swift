@@ -28,8 +28,7 @@ class ViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
      super.viewWillAppear(animated)
-        userDefault.set("", forKey: "username")
-        userDefault.set("", forKey: "password")
+        
     }
 
     
