@@ -194,10 +194,11 @@
         <scene sceneID="dde-eZ-tM1">
             <objects>
                 <viewController storyboardIdentifier="SegueBillDetails" id="F6o-TT-Stb" customClass="ShowBillDetailsViewController" customModule="C0768706_MIDTerm_MAD3115W2020" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Bzg-Zh-q45">
+                    <view key="view" contentMode="scaleToFill" id="Bzg-Zh-q45" customClass="Sh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="SegueBillDetails"/>
                         <viewLayoutGuide key="safeArea" id="2jg-GK-wg1"/>
                     </view>
                 </viewController>

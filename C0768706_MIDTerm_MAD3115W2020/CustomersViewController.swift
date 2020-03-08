@@ -16,6 +16,7 @@ class CustomersViewController: UIViewController {
     @IBOutlet weak var tblView: UITableView!
     let userDefault = UserDefaults.standard
     override func viewDidLoad() {
+        
          self.navigationItem.hidesBackButton = true
         
         
@@ -72,11 +73,16 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 90.5
     }
-    //func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
-    //{
-     //   self.performSegue(withIdentifier: "SegueBillDetails", sender: self)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+
+          let storyboard = UIStoryboard(name: "Main", bundle: nil)
+       let vc = storyboard.instantiateViewController(withIdentifier: "SegueBillDetails") as! ShowBillDetailsViewController
+                                              
+           self.navigationController?.pushViewController(vc, animated: true)
         
-    //}
+        
+    }
 
 
 }

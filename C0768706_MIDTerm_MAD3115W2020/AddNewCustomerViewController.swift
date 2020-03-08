@@ -45,7 +45,7 @@ class AddNewCustomerViewController: UIViewController {
         let firstName = self.txtFirstName.text!
         let lastName = self.txtLastName.text!
         let email = self.txtEmailId.text!
-        var c=Customer(customerId: "fg", firstName: firstName, lastName: lastName, emailAddress:email,Dob:strDate,username:"hello@123",password: "8790",gender: .FEMALE)
+        var c=Customer(customerId: "fg", firstName: firstName, lastName: lastName, emailAddress:email,Dob:strDate,gender: .FEMALE)   
         Singelton.getInstance().addCustomer(customer: c)
     }
     
