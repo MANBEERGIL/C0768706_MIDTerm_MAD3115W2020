@@ -17,7 +17,7 @@ var firstName:String
 var lastName:String
  var   Dob:String
 
-    var gender:Gender
+    var gender:String
     public var fullName: String{
     return "\(firstName) \(lastName)"
     }
@@ -26,14 +26,14 @@ var lastName:String
 var emailAddress:String?
    
     var totalBillToPay:Double=0.00
-    init(customerId:String,firstName:String,lastName:String,emailAddress:String,Dob:String,gender:Gender)
+    init(customerId:String,firstName:String,lastName:String,emailAddress:String,Dob:String,gender:String)
 {
 self.customerId=customerId
 self.firstName=firstName
 self.lastName=lastName
     self.Dob=Dob
     self.age=AgeCalculation.calculateAge(birthDate: Dob)
-    
+    self.emailAddress=emailAddress
     self.gender=gender
    
 

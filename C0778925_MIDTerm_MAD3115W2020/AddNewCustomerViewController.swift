@@ -10,6 +10,7 @@ import UIKit
 
 class AddNewCustomerViewController: UIViewController {
 
+    @IBOutlet weak var lblGender: UITextField!
     @IBOutlet weak var txtFirstName: UITextField!
     @IBOutlet weak var txtLastName: UITextField!
     @IBOutlet weak var lblBithdate: UILabel!
@@ -45,7 +46,8 @@ class AddNewCustomerViewController: UIViewController {
         let firstName = self.txtFirstName.text!
         let lastName = self.txtLastName.text!
         let email = self.txtEmailId.text!
-        var c=Customer(customerId: "fg", firstName: firstName, lastName: lastName, emailAddress:email,Dob:strDate,gender: .FEMALE)   
+        let gender=self.lblGender.text!
+        var c=Customer(customerId: "fg", firstName: firstName, lastName: lastName, emailAddress:email,Dob:strDate,gender: gender)
         Singelton.getInstance().addCustomer(customer: c)
     }
     

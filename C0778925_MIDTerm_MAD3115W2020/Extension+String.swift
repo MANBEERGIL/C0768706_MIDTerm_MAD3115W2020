@@ -20,4 +20,23 @@ extension String{
         let mobileTest = NSPredicate(format: "SELF MATCHES %@", mobileNumberRegEx)
         return mobileTest.evaluate(with: self)
     }
+    func stringToDate(string : String) -> Date {      //https://stackoverflow.com/questions/35700281/date-format-in-swift
+        
+        let dateformatGet1 = DateFormatter()
+        dateformatGet1.dateFormat = "dd/MM/yyyy"
+     
+        let birthDate1 : Date? = dateformatGet1.date(from: string)
+        return birthDate1!
+    }
+    
+}
+extension Date{
+    func dateFormatt(dated:Date)->String
+    {
+        let dateFormatter = DateFormatter()
+
+           dateFormatter.dateStyle = DateFormatter.Style.long
+        let str=dateFormatter.string(from: dated)
+        return str
+    }
 }

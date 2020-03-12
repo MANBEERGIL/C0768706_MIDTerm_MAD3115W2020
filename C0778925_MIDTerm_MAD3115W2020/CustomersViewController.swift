@@ -12,16 +12,16 @@ class CustomersViewController: UIViewController {
     
     var customers:[Customer] = []
     @IBOutlet weak var lblHello: UILabel!
-    
+  
     @IBOutlet weak var tblView: UITableView!
     let userDefault = UserDefaults.standard
     override func viewDidLoad() {
-        
+         
          self.navigationItem.hidesBackButton = true
         
         
         if let navigationBar = self.navigationController?.navigationBar {
-            let firstFrame = CGRect(x: 95, y: 0, width: navigationBar.frame.width/2, height: navigationBar.frame.height)
+            let firstFrame = CGRect(x: 110, y: 0, width: navigationBar.frame.width/2, height: navigationBar.frame.height)
             
             if let username = userDefault.string(forKey: "username"){
             let firstLabel = UILabel(frame: firstFrame)
@@ -64,10 +64,10 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "customerCell")
 
-    let customer = customers[indexPath.row]
+     let customer = customers[indexPath.row]
 
     cell?.textLabel?.text = customer.fullName
-    cell?.detailTextLabel?.text = "Age: \(String(describing: customer.age))"
+    cell?.detailTextLabel?.text = "Age: \(customer.age))"
     return cell!
 }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -75,14 +75,26 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
+        let c=Singelton.getInstance().getAllCustomers()
+        let cust=c[indexPath.section]
 
           let storyboard = UIStoryboard(name: "Main", bundle: nil)
-       let vc = storyboard.instantiateViewController(withIdentifier: "SegueBillDetails") as! ShowBillDetailsViewController
+       let vc = storyboard.instantiateViewController(withIdentifier: "CustomerDetailsVC") as! CustomerDetailsViewController
+        vc.customer=cust 
                                               
            self.navigationController?.pushViewController(vc, animated: true)
         
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        Singelton.getInstance().loadData()
+        self.tblView.reloadData()
+    }
+    
+        
+        
+    
 
 
 }
